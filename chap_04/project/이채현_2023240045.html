@@ -1,15 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <!-- 자신이 만드는 웹페이지의 제목을 넣어시오 -->
   <title>음식소개</title>
-  <!-- 이름과 학번을 정확하게 쓰시오 -->
-  <h3>Project 4장: 이름: 이채현 학번: 2023240045 </h3>
-  <hr>  
+
+  <style>
+    /* 기본 글꼴과 배경 */
+    body {
+      font-family: "맑은 고딕", sans-serif;
+      background-color: hsl(210, 60%, 95%);
+      margin: 0;
+      color: #222;
+    }
+
+    /* 제목 박스 */
+    h1 {
+      background-color: rgb(255, 99, 71); /* rgb 표기 (tomato 색) */
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-bottom: 4px solid #cc4444; /* hex 표기 */
+    }
+
+    /* 과제 정보 박스 */
+    h3 {
+      background-color: #fffacd; /* hex 표기 (lemonchiffon) */
+      border: 2px solid orange;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    /* 각 음식 구역 */
+    div {
+      background-color: rgba(255, 255, 255, 0.9); /* rgba 표기 */
+      border: 2px solid #aaa;
+      margin: 15px;
+      padding: 15px;
+      width: 320px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center; /* 가운데 정렬 */
+    }
+
+    /* 이미지 가운데 정렬 + 박스모델 */
+    img {
+      width: 250px;
+      height: auto;
+      border: 4px solid hsl(200, 50%, 70%);
+      margin: 10px auto;
+      display: block; /* 가운데 정렬 */
+      padding: 5px;
+      background-color: #fafafa;
+    }
+
+    /* 하단 구분선 */
+    hr {
+      border: 1px solid #999;
+    }
+  </style>
 </head>
 <body>
-  <!-- 이 이후 부터 자신만의 음식 이야기를 만드시오 -->
+  <h1>나라별 음식 소개</h1>
+  <h3>Project 4장: 이름: 이채현 학번: 2023240045</h3>
+  <hr>
 
+  <p style="text-align:center;">각 나라를 대표하는 음식을 소개합니다.</p>
+
+  <!-- 한국 -->
+  <div>
+    <h2 style="color: green;">대한민국</h2>
+    <img src="../media/bibimbab.png" alt="비빔밥">
+    <p><strong>비빔밥</strong>은 다양한 채소와 고추장을 섞어 먹는 한국의 전통 음식입니다.</p>
+  </div>
+
+  <!-- 중국 -->
+  <div>
+    <h2 style="color: darkred;">중국</h2>
+    <img src="../media/dumpling2.png" alt="만두">
+    <p><strong>만두</strong>는 고기와 채소를 넣어 찌거나 굽는 중국의 대표 음식입니다.</p>
+  </div>
+
+  <!-- 일본 -->
+  <div>
+    <h2 style="color: navy;">일본</h2>
+    <img src="../media/sushi1.png" alt="스시">
+    <p><strong>스시</strong>는 초밥 위에 신선한 해산물을 얹어 먹는 일본의 전통 요리입니다.</p>
+  </div>
+
+  <hr>
+  <p style="text-align:center; color:#555;">© 2025 나라별 음식 소개 — 이채현(2023240045)</p>
 </body>
 </html>
