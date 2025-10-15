@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>여행을 떠나요: 한국 & 일본</title>
+  <style>
+    body {
+      font-family: "맑은 고딕", Arial, sans-serif;
+      margin: 0;
+      background: #f6f8fb;
+      color: #222;
+    }
+    header {
+      background: #587ca1;
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+    }
+    .meta {
+      font-size: 14px;
+      opacity: 0.95; /* 투명도 예시 */
+    }
+    .container { max-width: 980px; margin: 0 auto; padding: 12px; }
+
+    /* 나라 섹션 박스 (간단 박스모델) */
+    section {
+      background: #fff;
+      border: 1px solid #d5deea;
+      border-radius: 8px;
+      padding: 12px;
+      margin: 12px 0;
+    }
+
+    /* 겹치는 갤러리(국기 아닌 사진만) */
+    .stack {
+      position: relative;       /* 자식 absolute 기준 */
+      height: 160px;            /* 겹침 높이 */
+      margin: 8px 0 6px 0;
+      background: #fafcff;
+      border: 1px solid #e1e7f1;
+    }
+    .stack img {
+      position: absolute;
+      width: 160px;
+      height: auto;
+      border: 4px solid #e5edf7;
+      background: #fff;
+      padding: 6px;
+      opacity: 0.92;            /* 기본 살짝 투명 */
+      cursor: zoom-in;          /* 커서 변경 */
+    }
+    /* 한국 사진 배치 */
+    .kr-1 { left: 18px;  top: 18px; z-index: 1; }
+    .kr-2 { left: 78px;  top: 28px; z-index: 2; }
+    .kr-3 { left: 138px; top: 38px; z-index: 3; }
+
+    /* 일본 사진 배치 */
+    .jp-1 { left: 18px;  top: 18px; z-index: 1; }
+    .jp-2 { left: 78px;  top: 28px; z-index: 2; }
+    .jp-3 { left: 138px; top: 38px; z-index: 3; }
+
+    /* hover 시 투명도 조금 진하게 */
+    .stack img:hover { opacity: 1; }
+
+    /* 간단 표 */
+    table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+    th, td { border: 1px solid #d8e1ee; padding: 8px; }
+    th { background: #eef4fb; }
+
+    /* 간단 폼 꾸미기 */
+    form {
+      background: rgba(255,255,255,0.95); /* 투명도 */
+      border: 1px solid #d5deea;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    label { display: inline-block; width: 90px; margin: 6px 0; }
+    input[type="text"], select, textarea {
+      width: 240px; padding: 6px; border: 1px solid #bcd; border-radius: 6px; background: #fbfdff;
+    }
+    textarea { height: 70px; }
+    .btns { margin-top: 8px; }
+    input[type="submit"], input[type="reset"] {
+      padding: 8px 12px; border: 1px solid #446b9c; background: #587ca1; color: #fff; border-radius: 6px; cursor: pointer;
+      margin-right: 6px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover { background: #446b9c; }
+    footer { text-align: center; color: #555; padding: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>여행을 떠나요: 한국 & 일본</h1>
+    <div class="meta">이채현 (학번: 2023240045)</div>
+  </header>
+
+  <main class="container">
+    <!-- 한국 -->
+    <section>
+      <h2>대한민국 여행</h2>
+      <p>한옥·야경·자연이 어우러진 도시와 음식의 나라.</p>
+
+      <!-- 국기 아닌 사진만 겹치기 -->
+      <div class="stack">
+        <img src="../media/korea1.jpg" alt="한국 여행지 1" class="kr-1">
+        <img src="../media/korea2.jpg" alt="한국 여행지 2" class="kr-2">
+        <img src="../media/korea3.jpg" alt="한국 여행지 3" class="kr-3">
+      </div>
+
+      <table>
+        <caption><strong>한국 여행 요약</strong></caption>
+        <tr>
+          <th>장점</th><th>단점</th>
+        </tr>
+        <tr>
+          <td>교통 편의, 다양한 먹거리, 치안 양호</td>
+          <td>성수기 혼잡, 숙박비 상승</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 일본 -->
+    <section>
+      <h2>일본 여행</h2>
+      <p>정갈한 거리, 지역별 음식, 온천과 자연의 매력.</p>
+
+      <!-- 국기 아닌 사진만 겹치기 -->
+      <div class="stack">
+        <img src="../media/japan1.jpg" alt="일본 여행지 1" class="jp-1">
+        <img src="../media/japan2.jpg" alt="일본 여행지 2" class="jp-2">
+        <img src="../media/japan3.jpg" alt="일본 여행지 3" class="jp-3">
+      </div>
+
+      <table>
+        <caption><strong>일본 여행 요약</strong></caption>
+        <tr>
+          <th>장점</th><th>단점</th>
+        </tr>
+        <tr>
+          <td>철도 여행 편리, 거리 청결, 지역별 테마 뚜렷</td>
+          <td>관광 물가 부담, 인기 스팟 대기</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 간단 설문 -->
+    <section>
+      <h2>여행 선호 설문</h2>
+      <form action="#" method="get">
+        <p><label for="name">이름</label><input type="text" id="name" name="name"></p>
+        <p><label for="sid">학번</label><input type="text" id="sid" name="student_id"></p>
+        <p>
+          <label for="prefer">선호 국가</label>
+          <select id="prefer" name="prefer">
+            <option value="korea">대한민국</option>
+            <option value="japan">일본</option>
+          </select>
+        </p>
+        <p><label for="memo">메모</label><textarea id="memo" name="memo" placeholder="여행에서 기대하는 점"></textarea></p>
+        <div class="btns">
+          <input type="submit" value="제출">
+          <input type="reset" value="다시쓰기">
+        </div>
+      </form>
+    </section>
+  </main>
+
+
+</body>
+</html>
